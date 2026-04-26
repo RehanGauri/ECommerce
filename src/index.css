@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+@import "tailwindcss";
+
+
+@theme {
+  --font-outfit: "Outfit", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+
+  
+  /* Default Light mode*/
+  --color-gold: #B5885A;
+  --color-main-bg: #ffffff;
+  --color-secondary-bg: #B5885A;
+  --color-second-bg: #f2f0ec;
+  --color-soft-bg: #F8F7F4;
+  --color-main-text: #000000;
+  --color-gray-border: #e5e7eb;
+  --color-gray-bg: #F2F0EC;
+  --color-gray-text: #9a9690
+}
+/* 
+        --c-surface2: #f2f0ec;
+        --c-border: #e8e4dc;
+        --c-ink: #1a1916;
+        --c-ink2: #4a4844;
+        --c-ink3: #9a9690;
+        --c-accent: #b5885a;
+        --c-accent-d: #8e6539;
+        --c-accent-l: #f5ede0;
+        --c-accent-xl: #fbf6ef; */
+
+/* Dark Mode */
+  .dark{
+    --color-main-bg: #000000;  /* Black background */
+    --color-main-text: #ffffff; /* White text */
+    --color-border: #374151;   /* Darker grey border (like gray-700) */
+    --color-muted: #9ca3af;    /* Lighter grey text (like gray-400) */
+  }
+
