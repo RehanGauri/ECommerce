@@ -47,7 +47,7 @@ const Navbar = () => {
         ))}
       </nav>
       <div className="flex gap-8 items-center justify-center px-3">
-        <SearchBar />
+        {/* <SearchBar /> */}
         <div className="flex gap-5 items-center justify-center">
           <span className="relative">
             <Link to="/wishlist">
