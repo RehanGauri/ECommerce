@@ -1,16 +1,49 @@
-# React + Vite
+# 🛍️ Luxe – Modern E-commerce Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Luxe is a fully responsive e-commerce frontend built using React and Tailwind CSS, focused on delivering a clean, premium UI and smooth user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🛒 Dynamic product listing using FakeStore API (via Axios)
+- 🔍 Advanced filtering (category, price range, rating)
+- 📱 Fully responsive design (mobile-first)
+- 🎨 Consistent premium UI theme
+- ❤️ Wishlist & Cart functionality (Redux)
+- 🔔 Toast notifications for user actions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📄 Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Home  
+- Shop  
+- New In  
+- Collections  
+- Sale  
+
+---
+
+## 🧠 Tech Stack
+
+- React.js  
+- Tailwind CSS  
+- Redux Toolkit  
+- Axios  
+- React Router  
+
+---
+
+## 🎯 Focus
+
+- Clean UI & UX  
+- Real-world filtering logic  
+- Responsive design  
+- Scalable component structure  
+
+---
+
+## 📦 API
+
+https://fakestoreapi.com/
