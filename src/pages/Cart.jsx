@@ -1,11 +1,15 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import CartProduct from "../components/CartProduct";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
+import { clearCart } from "../features/cart/cartSlice";
+import { toast } from "react-toastify";
 
 const Cart = () => {
   const cartProducts = useSelector((state) => state.cart.cartItems);
+
+  const dispatch = useDispatch()
 
   const shippingCost = 20;
 
@@ -56,6 +60,10 @@ const Cart = () => {
 
               <Button
                 text={"Proceed to Checkout"}
+                onClick={()=>{
+                  toast.success("✨ Order Confirmed! Thank you for shopping with LUXE. Your style is on its way.");
+                  dispatch(clearCart())
+                }}
                 classNames={"w-full mt-5 text-sm sm:text-base"}
               />
 

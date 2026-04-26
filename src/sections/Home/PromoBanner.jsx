@@ -7,16 +7,15 @@ const PromoBanner = () => {
     <div className='py-20'>
       <div className="relative overflow-hidden bg-black rounded-3xl p-6 sm:p-10 lg:p-16">
 
-        {/* Bubble 1 */}
+
         <div className="absolute -right-10 -top-10 sm:-right-16 sm:-top-16 w-40 h-40 sm:w-72 sm:h-72 rounded-full bg-yellow-400 opacity-10" />
         
-        {/* Bubble 2 */}
+
         <div className="absolute left-[30%] sm:left-[40%] -bottom-16 sm:-bottom-20 w-32 h-32 sm:w-52 sm:h-52 rounded-full bg-yellow-400 opacity-[0.06]" />
 
-        {/* Content */}
         <div className="relative z-1 flex flex-col lg:flex-row lg:justify-between lg:items-center text-white gap-6">
 
-          {/* Text */}
+
           <div>
             <h1 className='font-outfit text-gold text-sm sm:text-base'>
               LIMITED TIME OFFER
@@ -31,7 +30,6 @@ const PromoBanner = () => {
             </h1>
           </div>
 
-          {/* Button */}
           <div className="w-full lg:w-auto">
             <Link to="/shop">
               <Button 

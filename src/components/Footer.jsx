@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Footer = () => {
   const footerItems = [
@@ -45,10 +46,10 @@ const Footer = () => {
   return (
     <div className="text-white py-12">
       
-      {/* Top Section */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 px-6 sm:px-10 lg:px-40 pb-10">
         
-        {/* Brand */}
+
         <div>
           <h1 className="font-cormorant text-3xl sm:text-4xl font-bold">LUXE.</h1>
           <h2 className="pt-3 text-gray-400 font-outfit font-semibold text-sm sm:text-base">
@@ -58,15 +59,15 @@ const Footer = () => {
           </h2>
         </div>
 
-        {/* Links */}
         {footerItems.map((item, idx) => (
           <div key={idx}>
-            <div className="font-montserrat font-bold mb-3">{item.name}</div>
+            <div className="font-montserrat font-bold mb-3 cursor-pointer" onClick={()=>toast.warning("This page is not available")}>{item.name}</div>
 
             {item.subItems.map((subItem, idx2) => (
               <div
                 key={idx2}
-                className="font-outfit text-gray-300 font-light mb-1 text-sm"
+                className="font-outfit text-gray-300 font-light mb-1 text-sm cursor-pointer"
+                 onClick={()=>toast.warning("This page is not available")}
               >
                 {subItem.subName}
               </div>
